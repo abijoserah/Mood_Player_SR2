@@ -1,4 +1,6 @@
-export function SongCard({ song }) {
+import type { Song } from "../data";
+
+export function SongCard({ song }: { song: Song }) {
     return (
         <div className="cardDiv">
             <img className="cardImg" src={song.cover} />
