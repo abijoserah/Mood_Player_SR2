@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base:"/Mood_Player_SR2/",
   plugins: [react()],
+    build: { outDir: 'docs' },
 })
