@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&display=swap');
+
+:root {
+    --background-color: rgb(248, 242, 235);
+    --font-family-title: "Luckiest Guy", sans-serif;
+    --font-family-body: titling-gothic-fb-wide, sans-serif;
+    --color-body: rgb(23, 23, 23) ; 
+}
+
+
+* {
+    box-sizing: content-box;
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    font-family: var(--font-family-body);
+}
+
+.headerDiv{
+    height: 80vh;
+}
+
+.headerText{
+    font-family: var(--font-family-title);
+    font-weight: 380;
+    font-size: 200px;
+    line-height: 0.85;
+    margin-top: 250px;
+    color: var(--color-body);
+}
+
+.headerTextSpan{
+    font-family: var(--font-family-title);
+    font-weight: 10;
+    font-size: 40px;
+    display: block;
+    margin-top: -20px;
+    line-height: 1;
+}
+
+
+.headerP{
+font-family: var(--font-family-body);
+margin-top: 170px;
+font-weight: 600;
+font-size: 18px;
+color: var(--color-body);
+line-height : 1.2;
+}
+
+.headerIcon{
+    margin-top: 150px;
+    width: 40px;
+    animation: bobbing 1.8s ease-in-out  infinite;
+}
+
+@keyframes bobbing {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-38px); }
+}
+
+.msDiv1 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap:20px;
+  }
+
+
+  .msP{
+    font-weight: 600;
+  }
+
+
+  .msButton {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 65px;
+  min-width: fit-content;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.msButton:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+
+  .cardGrid{
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+margin-bottom: 30px;
+
+  }
+
+  .cardDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: oklch(96.9% 0.016 293.756);
+    border-radius: 12px;
+    flex-basis: 230px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+    gap: 10px;
+  }
+
+  .cardDiv:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+  .cardImg{
+    width: 200px;
+    height: 160px;
+  }
+
+  .cardTitle{
+    line-height: 0.9;
+    min-height: 70px;
+    padding-top: 20px;
+  }
+  .cardA{
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: oklch(70.2% 0.183 293.541);
+    color: black;
+    padding: 1.5px 28px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  }
+
+  .cardA:hover{
+    text-decoration: none;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  color: red;
+   
+  }
+  footer{
+    font-size: 0.875rem;
+    text-decoration: underline;
+  }
+
