@@ -7,7 +7,7 @@ export function SongGrid({
     songs: Song[]
 }) {
     return (
-        <div className="cardGrid">
+        <div className="cardGrid ">
             {songs.map((song) => {
                 return (
                     <SongCard key={song.id} song={song} />
